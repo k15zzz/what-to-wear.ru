@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('../fronts/GreatVibes-Regular.eot');
+    src: local('Great Vibes'), local('GreatVibes-Regular'),
+    url('../fronts/GreatVibes-Regular.woff2') format('woff2'),
+    url('../fronts/GreatVibes-Regular.woff') format('woff'),
+    url('../fronts/GreatVibes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+*
+* Logo
+*
+*/
+
+header{
+    height: 100px;
+}
+
+h1 {
+    color: #ff0000;
+    font-family: "Great Vibes", cursive;
+    font-size: 300%;
+    line-height: 80px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    text-shadow: 0 1px 1px #000000;
+}
+
+/*
+*
+* Weather description
+*
+*/
+.description{
+    display: table;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 120%;
+    padding: 20px;
+    text-shadow:
+            -0   -1px 0   #000000,
+            0   -1px 0   #000000,
+            -0    1px 0   #000000,
+            0    1px 0   #000000,
+            -1px -0   0   #000000,
+            1px -0   0   #000000,
+            -1px  0   0   #000000,
+            1px  0   0   #000000,
+            -1px -1px 0   #000000,
+            1px -1px 0   #000000,
+            -1px  1px 0   #000000,
+            1px  1px 0   #000000,
+            -1px -1px 0   #000000,
+            1px -1px 0   #000000,
+            -1px  1px 0   #000000,
+            1px  1px 0   #000000;
+}
+
+.weather {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.things{
+    display: table-cell;
+    width: 200px;
+    height: 375px;
+}
+
+.basic{
+    display: table-cell;
+    vertical-align: top;
+}
+
+.temperature {
+    font-size: 300%;
+    text-shadow:
+            -0   -1px 1px #000000,
+            0   -1px 1px #000000,
+            -0    1px 1px #000000,
+            0    1px 1px #000000,
+            -1px -0   1px #000000,
+            1px -0   1px #000000,
+            -1px  0   1px #000000,
+            1px  0   1px #000000,
+            -1px -1px 1px #000000,
+            1px -1px 1px #000000,
+            -1px  1px 1px #000000,
+            1px  1px 1px #000000,
+            -1px -1px 1px #000000,
+            1px -1px 1px #000000,
+            -1px  1px 1px #000000,
+            1px  1px 1px #000000;
+    margin-bottom: 20px;
+}
+
+/*
+* Date Time
+*/
+
+.time {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 500%;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow:
+            -0   -1px 1px #000000,
+            0   -1px 1px #000000,
+            -0    1px 1px #000000,
+            0    1px 1px #000000,
+            -1px -0   1px #000000,
+            1px -0   1px #000000,
+            -1px  0   1px #000000,
+            1px  0   1px #000000,
+            -1px -1px 1px #000000,
+            1px -1px 1px #000000,
+            -1px  1px 1px #000000,
+            1px  1px 1px #000000,
+            -1px -1px 1px #000000,
+            1px -1px 1px #000000,
+            -1px  1px 1px #000000,
+            1px  1px 1px #000000;
+}
+.dayWeek{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    text-shadow:
+            -0   -1px 1px #000000,
+            0   -1px 1px #000000,
+            -0    1px 1px #000000,
+            0    1px 1px #000000,
+            -1px -0   1px #000000,
+            1px -0   1px #000000,
+            -1px  0   1px #000000,
+            1px  0   1px #000000,
+            -1px -1px 1px #000000,
+            1px -1px 1px #000000,
+            -1px  1px 1px #000000,
+            1px  1px 1px #000000,
+            -1px -1px 1px #000000,
+            1px -1px 1px #000000,
+            -1px  1px 1px #000000,
+            1px  1px 1px #000000;
+    color: white;
+}
+
+/*
+* Background
+*/
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+    flex-direction: column;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*
+* Preloader
+*/
+
+.preloader {
+    background: red;
+    background-size:400% 400%;
+    animation:gradient 15s ease infinite;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #ffffff;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}

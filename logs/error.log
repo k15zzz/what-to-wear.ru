@@ -1,0 +1,530 @@
+2022/06/07 19:58:37 [notice] 1#1: using the "epoll" event method
+2022/06/07 19:58:37 [notice] 1#1: nginx/1.21.6
+2022/06/07 19:58:37 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/07 19:58:37 [notice] 1#1: OS: Linux 5.10.0-14-amd64
+2022/06/07 19:58:37 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/07 19:58:37 [notice] 1#1: start worker processes
+2022/06/07 19:58:37 [notice] 1#1: start worker process 30
+2022/06/07 19:58:37 [notice] 1#1: start worker process 31
+2022/06/07 19:58:37 [notice] 1#1: start worker process 32
+2022/06/07 19:58:37 [notice] 1#1: start worker process 33
+2022/06/07 20:01:28 [error] 30#30: *1 directory index of "/var/www/" is forbidden, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", host: "local.what-to-wear.ru"
+2022/06/07 20:01:28 [error] 31#31: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.28.0.3:9000", host: "local.what-to-wear.ru", referrer: "http://local.what-to-wear.ru/"
+2022/06/07 20:04:03 [error] 32#32: *5 FastCGI sent in stderr: "PHP message: PHP Warning:  http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given in /var/www/index.php on line 6" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.3:9000", host: "local.what-to-wear.ru"
+2022/06/07 20:04:04 [error] 33#33: *8 FastCGI sent in stderr: "PHP message: PHP Warning:  http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given in /var/www/index.php on line 6" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.3:9000", host: "local.what-to-wear.ru"
+2022/06/07 20:06:56 [error] 31#31: *14 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=', expecting ')' in /var/www/index.php on line 3" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.3:9000", host: "local.what-to-wear.ru"
+2022/06/07 20:06:56 [error] 31#31: *15 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '=', expecting ')' in /var/www/index.php on line 3" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.28.0.3:9000", host: "local.what-to-wear.ru", referrer: "http://local.what-to-wear.ru/"
+2022/06/07 20:26:09 [error] 30#30: *33 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(https://api.weather.yandex.ru/v2/forecast?lat=-95.363192&amp;lon=29.763701&amp;extra=true): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /var/www/index.php on line 45" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.3:9000", host: "local.what-to-wear.ru", referrer: "http://local.what-to-wear.ru/index.php"
+2022/06/07 20:42:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/06/07 20:42:22 [notice] 33#33: gracefully shutting down
+2022/06/07 20:42:22 [notice] 32#32: gracefully shutting down
+2022/06/07 20:42:22 [notice] 33#33: exiting
+2022/06/07 20:42:22 [notice] 32#32: exiting
+2022/06/07 20:42:22 [notice] 32#32: exit
+2022/06/07 20:42:22 [notice] 33#33: exit
+2022/06/07 20:42:22 [notice] 30#30: gracefully shutting down
+2022/06/07 20:42:22 [notice] 30#30: exiting
+2022/06/07 20:42:22 [notice] 30#30: exit
+2022/06/07 20:42:22 [notice] 31#31: gracefully shutting down
+2022/06/07 20:42:22 [notice] 31#31: exiting
+2022/06/07 20:42:22 [notice] 31#31: exit
+2022/06/07 20:42:22 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/06/07 20:42:22 [notice] 1#1: worker process 32 exited with code 0
+2022/06/07 20:42:22 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/07 20:42:22 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/06/07 20:42:22 [notice] 1#1: worker process 30 exited with code 0
+2022/06/07 20:42:22 [notice] 1#1: worker process 33 exited with code 0
+2022/06/07 20:42:22 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/07 20:42:22 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/06/07 20:42:22 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/06/07 20:42:22 [notice] 1#1: worker process 31 exited with code 0
+2022/06/07 20:42:22 [notice] 1#1: exit
+2022/06/07 20:42:50 [notice] 1#1: using the "epoll" event method
+2022/06/07 20:42:50 [notice] 1#1: nginx/1.21.6
+2022/06/07 20:42:50 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/07 20:42:50 [notice] 1#1: OS: Linux 5.10.0-14-amd64
+2022/06/07 20:42:50 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/07 20:42:50 [notice] 1#1: start worker processes
+2022/06/07 20:42:50 [notice] 1#1: start worker process 30
+2022/06/07 20:42:50 [notice] 1#1: start worker process 31
+2022/06/07 20:42:50 [notice] 1#1: start worker process 32
+2022/06/07 20:42:50 [notice] 1#1: start worker process 33
+2022/06/08 05:31:06 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/06/08 05:31:06 [notice] 30#30: gracefully shutting down
+2022/06/08 05:31:06 [notice] 32#32: gracefully shutting down
+2022/06/08 05:31:06 [notice] 31#31: gracefully shutting down
+2022/06/08 05:31:06 [notice] 30#30: exiting
+2022/06/08 05:31:06 [notice] 32#32: exiting
+2022/06/08 05:31:06 [notice] 31#31: exiting
+2022/06/08 05:31:06 [notice] 33#33: gracefully shutting down
+2022/06/08 05:31:06 [notice] 31#31: exit
+2022/06/08 05:31:06 [notice] 30#30: exit
+2022/06/08 05:31:06 [notice] 33#33: exiting
+2022/06/08 05:31:06 [notice] 32#32: exit
+2022/06/08 05:31:06 [notice] 33#33: exit
+2022/06/08 05:31:06 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/06/08 05:31:06 [notice] 1#1: worker process 33 exited with code 0
+2022/06/08 05:31:06 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/08 05:31:06 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/06/08 05:31:06 [notice] 1#1: worker process 31 exited with code 0
+2022/06/08 05:31:06 [notice] 1#1: worker process 32 exited with code 0
+2022/06/08 05:31:06 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/08 05:31:06 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/06/08 05:31:06 [notice] 1#1: worker process 30 exited with code 0
+2022/06/08 05:31:06 [notice] 1#1: exit
+2022/06/08 06:47:49 [notice] 1#1: using the "epoll" event method
+2022/06/08 06:47:49 [notice] 1#1: nginx/1.21.6
+2022/06/08 06:47:49 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/08 06:47:49 [notice] 1#1: OS: Linux 5.10.0-14-amd64
+2022/06/08 06:47:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/08 06:47:49 [notice] 1#1: start worker processes
+2022/06/08 06:47:49 [notice] 1#1: start worker process 30
+2022/06/08 06:47:49 [notice] 1#1: start worker process 31
+2022/06/08 06:47:49 [notice] 1#1: start worker process 32
+2022/06/08 06:47:49 [notice] 1#1: start worker process 33
+2022/06/08 06:47:52 [error] 31#31: *1 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(https://api.gismeteo.net/v2/weather/current/?latitude=54.35&amp;longitude=52.52): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /var/www/index.php on line 45" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.3:9000", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/08 06:48:00 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(https://api.gismeteo.net/v2/weather/current/?latitude=54.35&amp;longitude=52.52): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /var/www/index.php on line 45" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.3:9000", host: "localhost"
+2022/06/08 06:53:02 [error] 30#30: *6 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /var/www/index.php on line 49" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.3:9000", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/08 06:53:06 [error] 30#30: *6 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /var/www/index.php on line 49" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.3:9000", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/09 12:04:32 [notice] 1#1: using the "epoll" event method
+2022/06/09 12:04:32 [notice] 1#1: nginx/1.21.6
+2022/06/09 12:04:32 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/09 12:04:32 [notice] 1#1: OS: Linux 5.10.0-14-amd64
+2022/06/09 12:04:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/09 12:04:32 [notice] 1#1: start worker processes
+2022/06/09 12:04:32 [notice] 1#1: start worker process 29
+2022/06/09 12:04:32 [notice] 1#1: start worker process 30
+2022/06/09 12:04:32 [notice] 1#1: start worker process 31
+2022/06/09 12:04:32 [notice] 1#1: start worker process 32
+2022/06/09 15:58:49 [error] 29#29: *27 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use object of type stdClass as array in /var/www/index.php on line 48" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/09 16:04:50 [error] 29#29: *34 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /var/www/index.php on line 52" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/09 16:04:54 [error] 29#29: *34 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /var/www/index.php on line 52" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/09 16:25:17 [error] 29#29: *54 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(https://api.weather.yandex.ru/v2/forecast?lat=37.617698&amp;lon=55.755864&amp;extra=true): failed to open stream: HTTP request failed! HTTP/1.0 403 Forbidden
+ in /var/www/index.php on line 45" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/09 16:26:05 [error] 29#29: *54 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(https://api.weather.yandex.ru/v2/forecast?lat=37.617698&amp;lon=55.755864&amp;extra=true): failed to open stream: HTTP request failed! HTTP/1.0 403 Forbidden
+ in /var/www/index.php on line 45" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/09 16:36:16 [error] 29#29: *64 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use object of type stdClass as array in /var/www/index.php on line 49" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/09 16:36:50 [error] 29#29: *64 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot use object of type stdClass as array in /var/www/index.php on line 49" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/09 16:38:27 [error] 29#29: *64 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$forecast' (T_VARIABLE), expecting ',' or ';' in /var/www/index.php on line 58" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/09 16:39:05 [error] 29#29: *64 FastCGI sent in stderr: "PHP message: PHP Warning:  file_get_contents(https://api.weather.yandex.ru/v2/informers?lat=37.617698&amp;lon=55.755864): failed to open stream: HTTP request failed! HTTP/1.0 403 Forbidden
+ in /var/www/index.php on line 45" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "POST /index.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost", referrer: "http://localhost/index.php"
+2022/06/10 06:32:36 [error] 31#31: *172 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'API' has no effect in /var/www/json.php on line 5
+PHP message: PHP Warning:  The use statement with non-compound name 'DB' has no effect in /var/www/json.php on line 6
+PHP message: PHP Warning:  The use statement with non-compound name 'WhatToWear' has no effect in /var/www/json.php on line 7
+PHP message: PHP Fatal error:  Class 'DataBase' not found in /var/www/json.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/10 06:32:58 [error] 31#31: *175 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'API' has no effect in /var/www/json.php on line 5
+PHP message: PHP Warning:  The use statement with non-compound name 'DB' has no effect in /var/www/json.php on line 6
+PHP message: PHP Warning:  The use statement with non-compound name 'WhatToWear' has no effect in /var/www/json.php on line 7
+PHP message: PHP Fatal error:  Class 'DataBase' not found in /var/www/json.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/10 06:32:59 [error] 31#31: *175 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'API' has no effect in /var/www/json.php on line 5
+PHP message: PHP Warning:  The use statement with non-compound name 'DB' has no effect in /var/www/json.php on line 6
+PHP message: PHP Warning:  The use statement with non-compound name 'WhatToWear' has no effect in /var/www/json.php on line 7
+PHP message: PHP Fatal error:  Class 'DataBase' not found in /var/www/json.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/10 06:36:03 [error] 31#31: *178 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'API' has no effect in /var/www/json.php on line 5
+PHP message: PHP Warning:  The use statement with non-compound name 'DB' has no effect in /var/www/json.php on line 6
+PHP message: PHP Warning:  The use statement with non-compound name 'WhatToWear' has no effect in /var/www/json.php on line 7
+PHP message: PHP Fatal error:  Class 'DataBase' not found in /var/www/json.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/10 06:36:04 [error] 31#31: *178 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'API' has no effect in /var/www/json.php on line 5
+PHP message: PHP Warning:  The use statement with non-compound name 'DB' has no effect in /var/www/json.php on line 6
+PHP message: PHP Warning:  The use statement with non-compound name 'WhatToWear' has no effect in /var/www/json.php on line 7
+PHP message: PHP Fatal error:  Class 'DataBase' not found in /var/www/json.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/10 08:35:30 [error] 32#32: *188 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'API' has no effect in /var/www/json.php on line 5
+PHP message: PHP Warning:  The use statement with non-compound name 'DB' has no effect in /var/www/json.php on line 6
+PHP message: PHP Warning:  The use statement with non-compound name 'WhatToWear' has no effect in /var/www/json.php on line 7
+PHP message: PHP Fatal error:  Class 'DataBase' not found in /var/www/json.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/10 08:37:37 [error] 32#32: *191 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'API' has no effect in /var/www/json.php on line 5
+PHP message: PHP Warning:  The use statement with non-compound name 'DB' has no effect in /var/www/json.php on line 6
+PHP message: PHP Warning:  The use statement with non-compound name 'WhatToWear' has no effect in /var/www/json.php on line 7
+PHP message: PHP Fatal error:  Class 'DataBase' not found in /var/www/json.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/10 08:38:41 [error] 32#32: *191 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'API' has no effect in /var/www/json.php on line 5
+PHP message: PHP Warning:  The use statement with non-compound name 'DB' has no effect in /var/www/json.php on line 6
+PHP message: PHP Warning:  The use statement with non-compound name 'WhatToWear' has no effect in /var/www/json.php on line 7
+PHP message: PHP Fatal error:  Class 'DataBase' not found in /var/www/json.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.php HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/10 17:13:49 [notice] 1#1: using the "epoll" event method
+2022/06/10 17:13:49 [notice] 1#1: nginx/1.21.6
+2022/06/10 17:13:49 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/10 17:13:49 [notice] 1#1: OS: Linux 5.10.0-14-amd64
+2022/06/10 17:13:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/10 17:13:49 [notice] 1#1: start worker processes
+2022/06/10 17:13:49 [notice] 1#1: start worker process 30
+2022/06/10 17:13:49 [notice] 1#1: start worker process 31
+2022/06/10 17:13:49 [notice] 1#1: start worker process 32
+2022/06/10 17:13:49 [notice] 1#1: start worker process 33
+2022/06/10 19:01:07 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/json.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.php HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/10 19:01:39 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/json.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.php HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/10 19:01:57 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/json.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.php HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/10 19:02:10 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/json.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.php HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/10 19:02:20 [error] 30#30: *1 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /json.phps HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/10 19:03:17 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/10 19:03:18 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/10 19:03:32 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/10 19:03:32 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/10 19:03:45 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/index.php on line 11" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/10 19:03:46 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/index.php on line 11" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/10 19:04:14 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/index.php on line 11" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/10 19:04:15 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/index.php on line 11" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 10:36:45 [notice] 1#1: using the "epoll" event method
+2022/06/11 10:36:45 [notice] 1#1: nginx/1.21.6
+2022/06/11 10:36:45 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/11 10:36:45 [notice] 1#1: OS: Linux 5.10.0-14-amd64
+2022/06/11 10:36:45 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/11 10:36:45 [notice] 1#1: start worker processes
+2022/06/11 10:36:45 [notice] 1#1: start worker process 30
+2022/06/11 10:36:45 [notice] 1#1: start worker process 31
+2022/06/11 10:36:45 [notice] 1#1: start worker process 32
+2022/06/11 10:36:45 [notice] 1#1: start worker process 33
+2022/06/11 13:00:20 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'API\GeocodeYandexApi' not found in /var/www/server/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:00:44 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'API\GeocodeYandexApi' not found in /var/www/server/index.php on line 11" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:01:33 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'API\GeocodeYandexApi' not found in /var/www/server/index.php on line 11" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:02:22 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'API\GeocodeYandexApi' not found in /var/www/server/index.php on line 11" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:02:24 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'API\GeocodeYandexApi' not found in /var/www/server/index.php on line 11" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:03:10 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:03:11 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:03:29 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:04:03 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:05:33 [error] 33#33: *14 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:05:35 [error] 33#33: *14 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:05:43 [error] 33#33: *14 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:05:51 [error] 33#33: *14 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:05:52 [error] 33#33: *14 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 10" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:05:59 [error] 33#33: *14 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 7" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:06:00 [error] 33#33: *14 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 7" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:07:45 [error] 30#30: *23 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 8" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:07:46 [error] 30#30: *23 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 8" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:10:07 [error] 30#30: *26 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 7" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:12:53 [error] 30#30: *28 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 9" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:12:55 [error] 30#30: *28 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 9" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:16:44 [error] 30#30: *33 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 9" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:16:46 [error] 30#30: *33 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 9" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:20:34 [error] 30#30: *36 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 9" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:21:01 [error] 30#30: *39 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 9" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:21:49 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/06/11 13:21:49 [notice] 33#33: gracefully shutting down
+2022/06/11 13:21:49 [notice] 31#31: gracefully shutting down
+2022/06/11 13:21:49 [notice] 33#33: exiting
+2022/06/11 13:21:49 [notice] 31#31: exiting
+2022/06/11 13:21:49 [notice] 33#33: exit
+2022/06/11 13:21:49 [notice] 31#31: exit
+2022/06/11 13:21:49 [notice] 32#32: gracefully shutting down
+2022/06/11 13:21:49 [notice] 32#32: exiting
+2022/06/11 13:21:49 [notice] 32#32: exit
+2022/06/11 13:21:49 [notice] 30#30: gracefully shutting down
+2022/06/11 13:21:49 [notice] 30#30: exiting
+2022/06/11 13:21:49 [notice] 30#30: exit
+2022/06/11 13:21:49 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/06/11 13:21:49 [notice] 1#1: worker process 31 exited with code 0
+2022/06/11 13:21:49 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 13:21:49 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/06/11 13:21:49 [notice] 1#1: worker process 32 exited with code 0
+2022/06/11 13:21:49 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 13:21:49 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/06/11 13:21:49 [notice] 1#1: worker process 30 exited with code 0
+2022/06/11 13:21:49 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 13:21:49 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/06/11 13:21:49 [notice] 1#1: worker process 33 exited with code 0
+2022/06/11 13:21:49 [notice] 1#1: exit
+2022/06/11 13:28:02 [notice] 1#1: using the "epoll" event method
+2022/06/11 13:28:02 [notice] 1#1: nginx/1.21.6
+2022/06/11 13:28:02 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/11 13:28:02 [notice] 1#1: OS: Linux 5.10.0-14-amd64
+2022/06/11 13:28:02 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/11 13:28:02 [notice] 1#1: start worker processes
+2022/06/11 13:28:02 [notice] 1#1: start worker process 30
+2022/06/11 13:28:02 [notice] 1#1: start worker process 31
+2022/06/11 13:28:02 [notice] 1#1: start worker process 32
+2022/06/11 13:28:02 [notice] 1#1: start worker process 33
+2022/06/11 13:28:33 [error] 30#30: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 9" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:32:58 [error] 31#31: *3 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 9" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/06/11 13:36:23 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/06/11 13:36:23 [notice] 32#32: gracefully shutting down
+2022/06/11 13:36:23 [notice] 32#32: exiting
+2022/06/11 13:36:23 [notice] 32#32: exit
+2022/06/11 13:36:23 [notice] 31#31: gracefully shutting down
+2022/06/11 13:36:23 [notice] 31#31: exiting
+2022/06/11 13:36:23 [notice] 31#31: exit
+2022/06/11 13:36:23 [notice] 33#33: gracefully shutting down
+2022/06/11 13:36:23 [notice] 33#33: exiting
+2022/06/11 13:36:23 [notice] 33#33: exit
+2022/06/11 13:36:23 [notice] 30#30: gracefully shutting down
+2022/06/11 13:36:23 [notice] 30#30: exiting
+2022/06/11 13:36:23 [notice] 30#30: exit
+2022/06/11 13:36:23 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/06/11 13:36:23 [notice] 1#1: worker process 32 exited with code 0
+2022/06/11 13:36:23 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 13:36:23 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/06/11 13:36:23 [notice] 1#1: worker process 31 exited with code 0
+2022/06/11 13:36:23 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 13:36:23 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/06/11 13:36:23 [notice] 1#1: worker process 33 exited with code 0
+2022/06/11 13:36:23 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 13:36:23 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/06/11 13:36:23 [notice] 1#1: worker process 30 exited with code 0
+2022/06/11 13:36:23 [notice] 1#1: exit
+2022/06/11 13:38:07 [notice] 1#1: using the "epoll" event method
+2022/06/11 13:38:07 [notice] 1#1: nginx/1.21.6
+2022/06/11 13:38:07 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/11 13:38:07 [notice] 1#1: OS: Linux 5.10.0-14-amd64
+2022/06/11 13:38:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/11 13:38:07 [notice] 1#1: start worker processes
+2022/06/11 13:38:07 [notice] 1#1: start worker process 29
+2022/06/11 13:38:07 [notice] 1#1: start worker process 30
+2022/06/11 13:38:07 [notice] 1#1: start worker process 31
+2022/06/11 13:38:07 [notice] 1#1: start worker process 32
+2022/06/11 13:38:19 [error] 29#29: *1 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 9" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:39:42 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Argument 1 passed to GeocodeYandexApi::__construct() must be an instance of int, string given, called in /var/www/server/index.php on line 20 and defined in /var/www/server/index.php on line 10" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:39:55 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Argument 1 passed to GeocodeYandexApi::__construct() must be an instance of int, string given, called in /var/www/server/index.php on line 18 and defined in /var/www/server/index.php on line 8" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:39:57 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Argument 1 passed to GeocodeYandexApi::__construct() must be an instance of int, string given, called in /var/www/server/index.php on line 18 and defined in /var/www/server/index.php on line 8" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:40:08 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Argument 1 passed to GeocodeYandexApi::GeocodeYandexApi() must be an instance of int, string given, called in /var/www/server/index.php on line 18 and defined in /var/www/server/index.php on line 8" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:40:42 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Argument 1 passed to GeocodeYandexApi::GeocodeYandexApi() must be an instance of int, string given, called in /var/www/server/index.php on line 19 and defined in /var/www/server/index.php on line 8" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:41:07 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Argument 1 passed to GeocodeYandexApi::GeocodeYandexApi() must be an instance of string, string given, called in /var/www/server/index.php on line 19 and defined in /var/www/server/index.php on line 8" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:41:08 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Argument 1 passed to GeocodeYandexApi::GeocodeYandexApi() must be an instance of string, string given, called in /var/www/server/index.php on line 19 and defined in /var/www/server/index.php on line 8" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:41:39 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'string' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/index.php on line 6" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:43:54 [error] 32#32: *4 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'API' has no effect in /var/www/server/index.php on line 2
+PHP message: PHP Fatal error:  Class 'GeocodeYandexApi' not found in /var/www/server/index.php on line 6" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:45:00 [error] 30#30: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'API\GeocodeYandexApi' not found in /var/www/server/index.php on line 6" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:45:02 [error] 30#30: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'API\GeocodeYandexApi' not found in /var/www/server/index.php on line 6" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:45:16 [error] 30#30: *21 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'API\GeocodeYandexApi' not found in /var/www/server/index.php on line 6" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:45:26 [error] 30#30: *21 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'GeocodeYandexApi' has no effect in /var/www/server/index.php on line 2
+PHP message: PHP Fatal error:  Class 'GeocodeYandexApi' not found in /var/www/server/index.php on line 6" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:45:34 [error] 30#30: *21 FastCGI sent in stderr: "PHP message: PHP Warning:  The use statement with non-compound name 'API' has no effect in /var/www/server/index.php on line 2
+PHP message: PHP Fatal error:  Class 'GeocodeYandexApi' not found in /var/www/server/index.php on line 6" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:53:31 [error] 29#29: *30 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'API\GeocodeYandexApi' not found in /var/www/server/index.php on line 6" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:54:01 [error] 29#29: *30 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'server\API\GeocodeYandexApi' not found in /var/www/server/index.php on line 6" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 13:57:53 [error] 29#29: *34 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'server\API\GeocodeYandexApi' not found in /var/www/server/index.php on line 7" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:01:56 [error] 29#29: *43 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'GeocodeYandexApi' not found in /var/www/server/index.php on line 20" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:01:57 [error] 29#29: *46 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'GeocodeYandexApi' not found in /var/www/server/index.php on line 20" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:02:15 [error] 29#29: *46 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'API\GeocodeYandexApi' not found in /var/www/server/index.php on line 22" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:02:17 [error] 29#29: *46 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'API\GeocodeYandexApi' not found in /var/www/server/index.php on line 22" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:03:07 [error] 29#29: *46 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'API\GeocodeYandexApi' not found in /var/www/server/index.php on line 7" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:04:00 [error] 29#29: *46 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/WhatToWear.php on line 7" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:04:02 [error] 29#29: *54 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'int' (T_STRING), expecting variable (T_VARIABLE) in /var/www/server/WhatToWear.php on line 7" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:31:55 [error] 29#29: *78 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'DB\PDO' not found in /var/www/server/DataBase.php on line 13" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:32:56 [error] 29#29: *81 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'DB\PDO' not found in /var/www/server/DataBase.php on line 13" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:32:58 [error] 29#29: *81 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'DB\PDO' not found in /var/www/server/DataBase.php on line 13" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:33:45 [error] 29#29: *81 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'DB\PDO' not found in /var/www/server/DataBase.php on line 13" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:35:01 [error] 29#29: *86 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'DB\PDO' not found in /var/www/server/DataBase.php on line 13" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:35:03 [error] 29#29: *89 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'DB\PDO' not found in /var/www/server/DataBase.php on line 13" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:35:17 [error] 32#32: *92 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'DB\PDO' not found in /var/www/server/DataBase.php on line 13" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:35:25 [error] 32#32: *92 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'DB\PDO' not found in /var/www/server/DataBase.php on line 13" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:35:27 [error] 32#32: *96 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'DB\PDO' not found in /var/www/server/DataBase.php on line 13" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:35:37 [error] 32#32: *96 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'DB\PDO' not found in /var/www/server/DataBase.php on line 13" while reading upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:35:47 [error] 32#32: *100 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'DB\PDO' not found in /var/www/server/DataBase.php on line 13" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:36:56 [error] 32#32: *102 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'DB\PDO' not found in /var/www/server/DataBase.php on line 12" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:37:25 [error] 32#32: *102 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Using $this when not in object context in /var/www/server/index.php on line 12" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:37:26 [error] 32#32: *106 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Using $this when not in object context in /var/www/server/index.php on line 12" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:38:11 [error] 32#32: *106 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class PDO could not be converted to string in /var/www/server/index.php on line 18" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 14:38:13 [error] 32#32: *106 FastCGI sent in stderr: "PHP message: PHP Catchable fatal error:  Object of class PDO could not be converted to string in /var/www/server/index.php on line 18" while reading response header from upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", upstream: "fastcgi://172.28.0.2:9000", host: "localhost"
+2022/06/11 15:10:31 [error] 32#32: *158 directory index of "/var/www/" is forbidden, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", host: "localhost"
+2022/06/11 15:10:32 [error] 32#32: *158 directory index of "/var/www/" is forbidden, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", host: "localhost"
+2022/06/11 15:10:33 [error] 32#32: *158 directory index of "/var/www/" is forbidden, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", host: "localhost"
+2022/06/11 15:10:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/06/11 15:10:47 [notice] 30#30: gracefully shutting down
+2022/06/11 15:10:47 [notice] 29#29: gracefully shutting down
+2022/06/11 15:10:47 [notice] 30#30: exiting
+2022/06/11 15:10:47 [notice] 29#29: exiting
+2022/06/11 15:10:47 [notice] 31#31: gracefully shutting down
+2022/06/11 15:10:47 [notice] 31#31: exiting
+2022/06/11 15:10:47 [notice] 29#29: exit
+2022/06/11 15:10:47 [notice] 30#30: exit
+2022/06/11 15:10:47 [notice] 31#31: exit
+2022/06/11 15:10:47 [notice] 32#32: gracefully shutting down
+2022/06/11 15:10:47 [notice] 32#32: exiting
+2022/06/11 15:10:47 [notice] 32#32: exit
+2022/06/11 15:10:48 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/06/11 15:10:48 [notice] 1#1: worker process 30 exited with code 0
+2022/06/11 15:10:48 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 15:10:48 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/06/11 15:10:48 [notice] 1#1: worker process 31 exited with code 0
+2022/06/11 15:10:48 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 15:10:48 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/06/11 15:10:48 [notice] 1#1: worker process 29 exited with code 0
+2022/06/11 15:10:48 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 15:10:48 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/06/11 15:10:48 [notice] 1#1: worker process 32 exited with code 0
+2022/06/11 15:10:48 [notice] 1#1: exit
+2022/06/11 15:10:56 [notice] 1#1: using the "epoll" event method
+2022/06/11 15:10:56 [notice] 1#1: nginx/1.21.6
+2022/06/11 15:10:56 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/11 15:10:56 [notice] 1#1: OS: Linux 5.10.0-14-amd64
+2022/06/11 15:10:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/11 15:10:56 [notice] 1#1: start worker processes
+2022/06/11 15:10:56 [notice] 1#1: start worker process 30
+2022/06/11 15:10:56 [notice] 1#1: start worker process 31
+2022/06/11 15:10:56 [notice] 1#1: start worker process 32
+2022/06/11 15:10:56 [notice] 1#1: start worker process 33
+2022/06/11 15:10:59 [error] 31#31: *1 directory index of "/var/www/" is forbidden, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", host: "localhost"
+2022/06/11 15:11:00 [error] 31#31: *1 directory index of "/var/www/" is forbidden, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", host: "localhost"
+2022/06/11 15:11:06 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/06/11 15:11:06 [notice] 31#31: gracefully shutting down
+2022/06/11 15:11:06 [notice] 30#30: gracefully shutting down
+2022/06/11 15:11:06 [notice] 30#30: exiting
+2022/06/11 15:11:06 [notice] 31#31: exiting
+2022/06/11 15:11:06 [notice] 30#30: exit
+2022/06/11 15:11:06 [notice] 31#31: exit
+2022/06/11 15:11:06 [notice] 32#32: gracefully shutting down
+2022/06/11 15:11:06 [notice] 32#32: exiting
+2022/06/11 15:11:06 [notice] 32#32: exit
+2022/06/11 15:11:06 [notice] 33#33: gracefully shutting down
+2022/06/11 15:11:06 [notice] 33#33: exiting
+2022/06/11 15:11:06 [notice] 33#33: exit
+2022/06/11 15:11:06 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/06/11 15:11:06 [notice] 1#1: worker process 31 exited with code 0
+2022/06/11 15:11:06 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 15:11:06 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/06/11 15:11:06 [notice] 1#1: worker process 32 exited with code 0
+2022/06/11 15:11:06 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 15:11:06 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/06/11 15:11:06 [notice] 1#1: worker process 30 exited with code 0
+2022/06/11 15:11:06 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 15:11:06 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/06/11 15:11:06 [notice] 1#1: worker process 33 exited with code 0
+2022/06/11 15:11:06 [notice] 1#1: exit
+2022/06/11 15:21:29 [notice] 1#1: using the "epoll" event method
+2022/06/11 15:21:29 [notice] 1#1: nginx/1.21.6
+2022/06/11 15:21:29 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/11 15:21:29 [notice] 1#1: OS: Linux 5.10.0-14-amd64
+2022/06/11 15:21:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/11 15:21:29 [notice] 1#1: start worker processes
+2022/06/11 15:21:29 [notice] 1#1: start worker process 30
+2022/06/11 15:21:29 [notice] 1#1: start worker process 31
+2022/06/11 15:21:29 [notice] 1#1: start worker process 32
+2022/06/11 15:21:29 [notice] 1#1: start worker process 33
+2022/06/11 15:21:49 [error] 33#33: *2 directory index of "/var/www/server/" is forbidden, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", host: "localhost"
+2022/06/11 15:23:11 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/06/11 15:23:11 [notice] 31#31: gracefully shutting down
+2022/06/11 15:23:11 [notice] 32#32: gracefully shutting down
+2022/06/11 15:23:11 [notice] 31#31: exiting
+2022/06/11 15:23:11 [notice] 32#32: exiting
+2022/06/11 15:23:11 [notice] 31#31: exit
+2022/06/11 15:23:11 [notice] 32#32: exit
+2022/06/11 15:23:11 [notice] 33#33: gracefully shutting down
+2022/06/11 15:23:11 [notice] 33#33: exiting
+2022/06/11 15:23:11 [notice] 33#33: exit
+2022/06/11 15:23:11 [notice] 30#30: gracefully shutting down
+2022/06/11 15:23:11 [notice] 30#30: exiting
+2022/06/11 15:23:11 [notice] 30#30: exit
+2022/06/11 15:23:11 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/06/11 15:23:11 [notice] 1#1: worker process 31 exited with code 0
+2022/06/11 15:23:11 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 15:23:11 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/06/11 15:23:11 [notice] 1#1: worker process 33 exited with code 0
+2022/06/11 15:23:11 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 15:23:11 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/06/11 15:23:11 [notice] 1#1: worker process 30 exited with code 0
+2022/06/11 15:23:11 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 15:23:11 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/06/11 15:23:11 [notice] 1#1: worker process 32 exited with code 0
+2022/06/11 15:23:11 [notice] 1#1: exit
+2022/06/11 15:23:16 [notice] 1#1: using the "epoll" event method
+2022/06/11 15:23:16 [notice] 1#1: nginx/1.21.6
+2022/06/11 15:23:16 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/11 15:23:16 [notice] 1#1: OS: Linux 5.10.0-14-amd64
+2022/06/11 15:23:16 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/11 15:23:16 [notice] 1#1: start worker processes
+2022/06/11 15:23:16 [notice] 1#1: start worker process 30
+2022/06/11 15:23:16 [notice] 1#1: start worker process 31
+2022/06/11 15:23:16 [notice] 1#1: start worker process 32
+2022/06/11 15:23:16 [notice] 1#1: start worker process 33
+2022/06/11 15:23:24 [error] 30#30: *1 directory index of "/var/www/server/" is forbidden, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", host: "localhost"
+2022/06/11 15:28:49 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/06/11 15:28:49 [notice] 30#30: gracefully shutting down
+2022/06/11 15:28:49 [notice] 32#32: gracefully shutting down
+2022/06/11 15:28:49 [notice] 31#31: gracefully shutting down
+2022/06/11 15:28:49 [notice] 33#33: gracefully shutting down
+2022/06/11 15:28:49 [notice] 30#30: exiting
+2022/06/11 15:28:49 [notice] 32#32: exiting
+2022/06/11 15:28:49 [notice] 31#31: exiting
+2022/06/11 15:28:49 [notice] 33#33: exiting
+2022/06/11 15:28:49 [notice] 31#31: exit
+2022/06/11 15:28:49 [notice] 30#30: exit
+2022/06/11 15:28:49 [notice] 32#32: exit
+2022/06/11 15:28:49 [notice] 33#33: exit
+2022/06/11 15:28:49 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/06/11 15:28:49 [notice] 1#1: worker process 33 exited with code 0
+2022/06/11 15:28:49 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 15:28:49 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/06/11 15:28:49 [notice] 1#1: worker process 31 exited with code 0
+2022/06/11 15:28:49 [notice] 1#1: worker process 32 exited with code 0
+2022/06/11 15:28:49 [notice] 1#1: signal 29 (SIGIO) received
+2022/06/11 15:28:49 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/06/11 15:28:49 [notice] 1#1: worker process 30 exited with code 0
+2022/06/11 15:28:49 [notice] 1#1: exit
+2022/06/11 15:28:54 [notice] 1#1: using the "epoll" event method
+2022/06/11 15:28:54 [notice] 1#1: nginx/1.21.6
+2022/06/11 15:28:54 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/11 15:28:54 [notice] 1#1: OS: Linux 5.10.0-14-amd64
+2022/06/11 15:28:54 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/11 15:28:54 [notice] 1#1: start worker processes
+2022/06/11 15:28:54 [notice] 1#1: start worker process 30
+2022/06/11 15:28:54 [notice] 1#1: start worker process 31
+2022/06/11 15:28:54 [notice] 1#1: start worker process 32
+2022/06/11 15:28:54 [notice] 1#1: start worker process 33
+2022/06/11 15:28:59 [error] 30#30: *1 directory index of "/var/www/" is forbidden, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", host: "localhost"
+2022/06/12 07:00:22 [error] 32#32: *204 directory index of "/var/www/server/" is forbidden, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", host: "localhost"
+2022/06/12 07:00:29 [error] 32#32: *204 directory index of "/var/www/server/" is forbidden, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /server/ HTTP/1.1", host: "localhost"
+2022/06/13 15:33:46 [notice] 1#1: using the "epoll" event method
+2022/06/13 15:33:46 [notice] 1#1: nginx/1.21.6
+2022/06/13 15:33:46 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/06/13 15:33:46 [notice] 1#1: OS: Linux 5.10.0-15-amd64
+2022/06/13 15:33:46 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/06/13 15:33:46 [notice] 1#1: start worker processes
+2022/06/13 15:33:46 [notice] 1#1: start worker process 30
+2022/06/13 15:33:46 [notice] 1#1: start worker process 31
+2022/06/13 15:33:46 [notice] 1#1: start worker process 32
+2022/06/13 15:33:46 [notice] 1#1: start worker process 33
+2022/06/14 15:58:55 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/06/14 15:58:55 [notice] 33#33: gracefully shutting down
+2022/06/14 15:58:55 [notice] 31#31: gracefully shutting down
+2022/06/14 15:58:55 [notice] 33#33: exiting
+2022/06/14 15:58:55 [notice] 31#31: exiting
+2022/06/14 15:58:55 [notice] 30#30: gracefully shutting down
+2022/06/14 15:58:55 [notice] 32#32: gracefully shutting down
+2022/06/14 15:58:55 [notice] 30#30: exiting
+2022/06/14 15:58:55 [notice] 32#32: exiting
+2022/06/14 15:58:55 [notice] 31#31: exit
+2022/06/14 15:58:55 [notice] 30#30: exit
+2022/06/14 15:58:55 [notice] 33#33: exit
+2022/06/14 15:58:55 [notice] 32#32: exit
+2022/06/14 15:58:56 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/06/14 15:58:56 [notice] 1#1: worker process 30 exited with code 0
+2022/06/14 15:58:56 [notice] 1#1: worker process 31 exited with code 0
+2022/06/14 15:58:56 [notice] 1#1: worker process 32 exited with code 0
+2022/06/14 15:58:56 [notice] 1#1: worker process 33 exited with code 0
+2022/06/14 15:58:56 [notice] 1#1: exit
+2022/07/07 18:28:59 [notice] 1#1: using the "epoll" event method
+2022/07/07 18:28:59 [notice] 1#1: nginx/1.21.6
+2022/07/07 18:28:59 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2022/07/07 18:28:59 [notice] 1#1: OS: Linux 5.10.0-15-amd64
+2022/07/07 18:28:59 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/07/07 18:28:59 [notice] 1#1: start worker processes
+2022/07/07 18:28:59 [notice] 1#1: start worker process 30
+2022/07/07 18:28:59 [notice] 1#1: start worker process 31
+2022/07/07 18:28:59 [notice] 1#1: start worker process 32
+2022/07/07 18:28:59 [notice] 1#1: start worker process 33
+2022/07/07 18:29:04 [error] 30#30: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET / HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost"
+2022/07/07 18:29:04 [error] 30#30: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.28.0.1, server: local.what-to-wear.ru, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.28.0.4:9000", host: "localhost", referrer: "http://localhost/"
+2022/07/07 18:56:17 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/07/07 18:56:17 [notice] 30#30: gracefully shutting down
+2022/07/07 18:56:17 [notice] 31#31: gracefully shutting down
+2022/07/07 18:56:17 [notice] 33#33: gracefully shutting down
+2022/07/07 18:56:17 [notice] 32#32: gracefully shutting down
+2022/07/07 18:56:17 [notice] 30#30: exiting
+2022/07/07 18:56:17 [notice] 31#31: exiting
+2022/07/07 18:56:17 [notice] 33#33: exiting
+2022/07/07 18:56:17 [notice] 32#32: exiting
+2022/07/07 18:56:17 [notice] 30#30: exit
+2022/07/07 18:56:17 [notice] 31#31: exit
+2022/07/07 18:56:17 [notice] 33#33: exit
+2022/07/07 18:56:17 [notice] 32#32: exit
+2022/07/07 18:56:17 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2022/07/07 18:56:17 [notice] 1#1: worker process 31 exited with code 0
+2022/07/07 18:56:17 [notice] 1#1: worker process 33 exited with code 0
+2022/07/07 18:56:17 [notice] 1#1: signal 29 (SIGIO) received
+2022/07/07 18:56:17 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/07/07 18:56:17 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2022/07/07 18:56:17 [notice] 1#1: worker process 32 exited with code 0
+2022/07/07 18:56:17 [notice] 1#1: worker process 30 exited with code 0
+2022/07/07 18:56:17 [notice] 1#1: exit
